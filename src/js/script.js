@@ -1,1 +1,3 @@
-alert(1);
+$(document).ready(function(){
+    $('.carousel__inner').slick();
+});
