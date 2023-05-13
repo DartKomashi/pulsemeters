@@ -1,6 +1,12 @@
 @media (max-width: 991px) {
     .container {
         width: 98%;
+        margin: 1%;
+    }
+    .carousel {
+        &__inner {
+            width: 98%;
+        }
     }
 }
 @media (max-width: 668px) {
@@ -128,6 +134,13 @@
     }
     .feed-form {
         width: 99%;
+    }
+    .carousel {
+        &__inner {
+            img {
+                width: 99%;
+            }
+        }
     }
 }
 @media (max-width: 350px) {

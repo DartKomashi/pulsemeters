@@ -26,4 +26,9 @@
     &:active {
         transform: translateY(2px);
     }
+    &_mini {
+        width: 135px;
+        height: 44px;
+        font-style: 14px;
+    }
 }
