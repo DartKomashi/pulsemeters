@@ -38,10 +38,13 @@
     }
     &__content {
         margin-top: 60px;
-        display: flex;
+        display: none;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
+        &_active {
+            display: flex;
+        }
     }
     &-item {
         width: 300px;
@@ -120,16 +123,16 @@
         }
         &__list {
             position: relative;
+            list-style-type: none;
             width: 50%;
-            margin-left: 0px;
+            margin-left: 20px;
             transform: translateX(0%);
             padding-right: 20px;
             transition: 0.5s all;
             padding-left: 19px;
             margin-bottom: 0;
-            list-style-type: none;
             &_active {
-                transform: translateX(-100%);
+                transform: translateX(calc(-100% - 19px));
                 margin-right: 0px;
             }
             li {
@@ -149,21 +152,21 @@
                     top: 8px;
                 }
             }
-            &__back {
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translateX(-50%);
-                display: block;
-                color: $main-color;
-                font-size: 14px;
-                font-weight: 500;
-                text-decoration: underline;
-                text-transform: uppercase;
-                &:hover {
-                    color: $main-color;
-                }
-            }
         }
+        &__back {
+            position: absolute;
+            display: block;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            color: $main-color;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: underline;
+            text-transform: uppercase;
+            &:hover {
+                color: $main-color;
+            }
+        }    
     }
 }
