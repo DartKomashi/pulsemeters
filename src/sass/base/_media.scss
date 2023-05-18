@@ -8,6 +8,11 @@
             width: 98%;
         }
     }
+    .catalog {
+        &__content {
+            justify-content: space-around;
+        }
+    }
 }
 @media (max-width: 668px) {
     .header {
@@ -28,6 +33,14 @@
         &__item {
             width: 200px;
             font-size: 12px;
+        }
+    }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+        }
+        &__tab {
+            margin-bottom: 10px;
         }
     }
 }

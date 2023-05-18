@@ -1,0 +1,54 @@
+.reviews {
+    &-list {
+        padding-top: 60px;
+        padding-left: 229px;
+        list-style-type: none;
+        li {
+            position: relative;
+            margin-bottom: 60px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            color: #0D0D0D;
+
+            h3 {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 10px;
+                color: #0D0D0D;
+            }
+            h4 {
+                font-weight: 500;
+                font-size: 14px;
+                color: #646464;
+                margin-bottom: 15px;
+            }
+
+            &:first-of-type {
+                &::before {
+                    content: url('../../img/photo_1.png');
+                    position: absolute;
+                    left: -229px;
+                    top: 0px;
+ 
+                }
+            }
+            &::before {
+                content: url('../../img/photo_2.png');
+                position: absolute;
+                left: -229px;
+                top: 0px;
+
+            }
+            &:last-of-type {
+                &::before {
+                    content: url('../../img/photo_3.png');
+                    position: absolute;
+                    left: -229px;
+                    top: 0px;
+
+                }
+            }
+        }
+    }
+}
