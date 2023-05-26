@@ -107,9 +107,20 @@ $(document).ready(function(){
       }).done(function() {
         $(this).find("input").val("");
         $('#consultation, #order').fadeOut();
-        $('.overlay, #thanks').fadeIn(slow);
+        $('.overlay, #thanks').fadeIn('slow');
         $('form').trigger('reset');
       });
       return false;
     });
+
+    //snooth scroll and page up:
+
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 1600) {
+        $('.pageup').fadeIn();
+      } else {
+        $('.pageup').fadeOut();
+      }
+    });
+
 });
