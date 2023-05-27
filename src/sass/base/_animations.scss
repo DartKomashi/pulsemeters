@@ -9,3 +9,39 @@
         transform: scale(1);
     }
 }
+
+@keyframes cuprotate {
+    from {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-2px);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    to {
+        transform: rotate(-5deg);
+    }
+}
+
+@keyframes shoejump {
+    from {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-2px);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: translateY(2px);
+    }
+    to {
+        transform: rotate(10deg);
+    }
+}

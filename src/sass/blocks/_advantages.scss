@@ -28,11 +28,23 @@
                 animation-play-state: paused;
             }
         }
-    }
+        #cup {
+            animation: cuprotate 1s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+        #shoe {
+            animation: shoejump 1s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
     &__subheader {
         font-weight: 700;
         font-size: 18px;
         line-height: 29px;
         color: #0D0D0D;
+    }
     }
 }
