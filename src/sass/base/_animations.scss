@@ -12,19 +12,13 @@
 
 @keyframes cuprotate {
     from {
-        transform: translateY(0px);
-    }
-    25% {
-        transform: translateY(-2px);
+        transform: rotate(-2deg);
     }
     50% {
-        transform: scale(1.1);
-    }
-    75% {
-        transform: rotate(5deg);
+        transform: rotate(2deg);
     }
     to {
-        transform: rotate(-5deg);
+        transform: rotate(0deg);
     }
 }
 

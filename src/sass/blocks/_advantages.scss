@@ -29,13 +29,13 @@
             }
         }
         #cup {
-            animation: cuprotate 1s ease infinite;
+            animation: cuprotate 0.1s linear infinite;
             &:hover {
                 animation-play-state: paused;
             }
         }
         #shoe {
-            animation: shoejump 1s ease infinite;
+            animation: shoejump 0.5s ease-out infinite;
             &:hover {
                 animation-play-state: paused;
             }
