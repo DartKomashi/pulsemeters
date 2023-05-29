@@ -135,7 +135,7 @@
                 transform: translateX(calc(-100% - 19px));
                 margin-right: 0px;
             }
-            li {
+            li:not(:last-child) {
                 position: relative;
                 font-weight: 300;
                 font-size: 14px;
