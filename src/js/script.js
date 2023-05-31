@@ -123,4 +123,12 @@ $(document).ready(function(){
       }
     });
     new WOW().init();
+
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 3270) {
+        $('.wow').fadeIn();
+      } else {
+        $('.wow').fadeOut();
+      }
+    });
 });
