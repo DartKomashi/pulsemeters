@@ -7,8 +7,8 @@ $(document).ready(function(){
         autoplaySpeed: 2000,
         speed: 1200,
         infinite: true,
-        prevArrow: '<button type="button" class="slick-prev"><img src="../icons/chevron-left-solid.svg"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="../icons/chevron-right-solid.svg"></button>',
+        prevArrow: '<button type="button" class="slick-next"><img src="../icons/chevron-right-solid.svg" alt="right"></button>',
+        nextArrow: '<button type="button" class="slick-prev"><img src="../icons/chevron-left-solid.svg" alt="left"></button>',
         responsive: [
           {
             breakpoint: 992,
